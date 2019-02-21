@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     var Num1: String = ""
     var Sign: Character = "A"
     
@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var dispTextView: UITextView!
     
     @IBAction func Btn1(_ sender: Any) {
-
          Num1.append("1")
          dispTextView.text = Num1
     }
@@ -85,6 +84,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BtnInteger(_ sender: Any) {
+        
     }
     
     @IBAction func BtnPercent(_ sender: Any) {
@@ -98,17 +98,43 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BtnSin(_ sender: Any) {
-        
+        let numArray : [Substring] = Num1.split(separator: Sign)
+        if numArray.count > 0{
+            let number1: Double! = Double(numArray[0])
+            let answer = sin(number1 * Double.pi / 180)
+            dispTextView.text = String(answer)
+            Num1 = String(answer)
+        }
     }
     
     @IBAction func BtnLog(_ sender: Any) {
+        let numArray : [Substring] = Num1.split(separator: Sign)
+        if numArray.count > 0{
+            let number1: Double! = Double(numArray[0])
+            let answer = log(number1)
+            dispTextView.text = String(answer)
+            Num1 = String(answer)
+        }
     }
     
     @IBAction func BtnTan(_ sender: Any) {
-        
+        let numArray : [Substring] = Num1.split(separator: Sign)
+        if numArray.count > 0{
+            let number1: Double! = Double(numArray[0])
+            let answer = tan(number1 * Double.pi / 180)
+            dispTextView.text = String(answer)
+            Num1 = String(answer)
+        }
     }
     
     @IBAction func BtnCos(_ sender: Any) {
+        let numArray : [Substring] = Num1.split(separator: Sign)
+        if numArray.count > 0{
+            let number1: Double! = Double(numArray[0])
+            let answer = cos(number1 * Double.pi / 180)
+            dispTextView.text = String(answer)
+            Num1 = String(answer)
+        }
     }
     
     @IBAction func BtnDivide(_ sender: Any) {
@@ -123,6 +149,7 @@ class ViewController: UIViewController {
         Sign = "*"
         Num1.append("*")
         dispTextView.text = Num1
+        
     }
     
     @IBAction func BtnSub(_ sender: Any) {
@@ -130,7 +157,6 @@ class ViewController: UIViewController {
         Sign = "-"
         Num1.append("-")
         dispTextView.text = Num1
-        
     }
     
     
@@ -139,8 +165,8 @@ class ViewController: UIViewController {
         let numArray : [Substring] = Num1.split(separator: Sign)
         
         if numArray.count >= 2 && numArray[1].count > 0 {
-            var number1: Int! = Int(numArray[0])
-            var number2: Int! = Int(numArray[1])
+            var number1: Double! = Double(numArray[0])
+            var number2: Double! = Double(numArray[1])
       
             switch  Sign {
             case "+":
@@ -159,8 +185,8 @@ class ViewController: UIViewController {
             default:
                 number1 = number1 + number2
             }
-            dispTextView.text = "\n---------------------"
-            dispTextView.text = String(number1)
+                dispTextView.text = String(number1)
+                Num1 = String(number1)
         }
     }
     

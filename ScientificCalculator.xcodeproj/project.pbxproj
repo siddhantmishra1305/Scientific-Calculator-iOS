@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E282FA3621FB018C00AFA219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282FA3521FB018C00AFA219 /* AppDelegate.swift */; };
-		E282FA3821FB018C00AFA219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282FA3721FB018C00AFA219 /* ViewController.swift */; };
+		E282FA3821FB018C00AFA219 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282FA3721FB018C00AFA219 /* MainViewController.swift */; };
 		E282FA3B21FB018C00AFA219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E282FA3921FB018C00AFA219 /* Main.storyboard */; };
 		E282FA3E21FB018C00AFA219 /* ScientificCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E282FA3C21FB018C00AFA219 /* ScientificCalculator.xcdatamodeld */; };
 		E282FA4021FB018E00AFA219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E282FA3F21FB018E00AFA219 /* Assets.xcassets */; };
 		E282FA4321FB018E00AFA219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E282FA4121FB018E00AFA219 /* LaunchScreen.storyboard */; };
+		E2C3ED78221F36D80097C02F /* CustomGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3ED77221F36D80097C02F /* CustomGradient.swift */; };
+		E2C3ED7A221F399F0097C02F /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3ED79221F399F0097C02F /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E282FA3221FB018C00AFA219 /* ScientificCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScientificCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E282FA3521FB018C00AFA219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E282FA3721FB018C00AFA219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E282FA3721FB018C00AFA219 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E282FA3A21FB018C00AFA219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E282FA3D21FB018C00AFA219 /* ScientificCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScientificCalculator.xcdatamodel; sourceTree = "<group>"; };
 		E282FA3F21FB018E00AFA219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E282FA4221FB018E00AFA219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E282FA4421FB018E00AFA219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C3ED77221F36D80097C02F /* CustomGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGradient.swift; sourceTree = "<group>"; };
+		E2C3ED79221F399F0097C02F /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				E282FA3521FB018C00AFA219 /* AppDelegate.swift */,
-				E282FA3721FB018C00AFA219 /* ViewController.swift */,
+				E282FA3721FB018C00AFA219 /* MainViewController.swift */,
 				E282FA3921FB018C00AFA219 /* Main.storyboard */,
 				E282FA3F21FB018E00AFA219 /* Assets.xcassets */,
 				E282FA4121FB018E00AFA219 /* LaunchScreen.storyboard */,
 				E282FA4421FB018E00AFA219 /* Info.plist */,
 				E282FA3C21FB018C00AFA219 /* ScientificCalculator.xcdatamodeld */,
+				E2C3ED77221F36D80097C02F /* CustomGradient.swift */,
+				E2C3ED79221F399F0097C02F /* BorderedButton.swift */,
 			);
 			path = ScientificCalculator;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E282FA3821FB018C00AFA219 /* ViewController.swift in Sources */,
+				E2C3ED78221F36D80097C02F /* CustomGradient.swift in Sources */,
+				E282FA3821FB018C00AFA219 /* MainViewController.swift in Sources */,
 				E282FA3621FB018C00AFA219 /* AppDelegate.swift in Sources */,
 				E282FA3E21FB018C00AFA219 /* ScientificCalculator.xcdatamodeld in Sources */,
+				E2C3ED7A221F399F0097C02F /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VHF4XQWWL9;
 				INFOPLIST_FILE = ScientificCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VHF4XQWWL9;
 				INFOPLIST_FILE = ScientificCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
